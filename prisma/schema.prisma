@@ -6,12 +6,13 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
+  //output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+   //"postgresql://achadosao_db_user:L7falM3PY3p9igz9zdETxdYHEkyRpsre@dpg-d2osofer433s73bbeup0-a.oregon-postgres.render.com/achadosao_db"
+  url  = env("DATABASE_URL")
 }
 
 model documento {
