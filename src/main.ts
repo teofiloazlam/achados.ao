@@ -20,6 +20,6 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document); // rota será /api
 
   // 🔹 Porta dinâmica (Render usa process.env.PORT)
-  await app.listen(process.env.PORT ?? 8000);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
